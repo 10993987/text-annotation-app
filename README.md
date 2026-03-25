@@ -1,27 +1,54 @@
-# TextAnnotationApp
+# 📝 Text Annotation App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+Приложение для аннотирования текста, разработанное на **Angular 18**. Позволяет создавать статьи, выделять произвольные фрагменты текста и добавлять к ним цветные аннотации с текстовыми примечаниями.
 
-## Development server
+## ✨ Функциональность
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 📚 Управление статьями (CRUD)
+- ➕ **Создание** новой статьи с заголовком и текстом
+- ✏️ **Редактирование** существующих статей
+- 🗑️ **Удаление** статей с подтверждением
+- 📋 **Просмотр** списка всех статей в виде карточек
 
-## Code scaffolding
+### 🎨 Аннотирование текста
+- 🖱️ **Выделение** любого фрагмента текста мышкой
+- 🎨 **Выбор цвета** подчеркивания (6 цветов на выбор)
+- 💬 **Добавление текстового примечания** к выделенному фрагменту
+- 🔍 **Всплывающая подсказка** при наведении на аннотированный текст
+- 💾 **Автоматическое сохранение** всех аннотаций
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 💾 Хранение данных
+- Все данные (статьи и аннотации) хранятся в **localStorage**
+- Данные сохраняются после перезагрузки страницы
+- Не требуется серверная часть
 
-## Build
+## 🛠️ Технологии
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Технология | Назначение |
+|------------|------------|
+| **Angular 18** | Основной фреймворк |
+| **TypeScript** | Типизация и современный JavaScript |
+| **RxJS** | Реактивное программирование, работа с данными |
+| **Range API** | Выделение текста и работа с DOM |
+| **LocalStorage API** | Хранение данных в браузере |
+| **CSS3** | Стилизация и адаптивный дизайн |
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Требования
+- Node.js (версия 18 или выше)
+- npm или yarn
 
-## Running end-to-end tests
+### Установка и запуск
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+# Клонировать репозиторий
+git clone https://github.com/10993987/text-annotation-app.git
 
-## Further help
+# Перейти в папку проекта
+cd text-annotation-app
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Установить зависимости
+npm install
+
+# Запустить приложение
+ng serve
